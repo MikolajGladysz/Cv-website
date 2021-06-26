@@ -1,0 +1,302 @@
+body {
+    background-color: #181818;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robot", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track{
+background-color: #181818;
+border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    
+    background-color: #999;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #666;
+}
+.btn1 {
+    margin-top: 50px;
+}
+
+.sideBtn {
+    background-color: transparent;
+    color: whitesmoke;
+    width: 97%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    text-align: left;
+    transition: all 0.5s ease;
+}
+
+.sideBtn:hover {
+    background-color: #383838;
+    cursor: pointer;
+}
+
+.sideBar ul {
+    list-style: none;
+}
+
+.sideBar i {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #999;
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+
+}
+
+.menu:active {
+    background-color: #373737;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.header .menu i {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.author {
+    white-space: nowrap;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.contact {
+    height: 100%;
+    align-self: flex-end;
+
+}
+
+.header {
+    background-color: #202020;
+    flex-direction: row;
+    position: fixed;
+    justify-content: stretch;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.headercon {
+    height: 100%;
+
+}
+
+.con1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    min-width: 200px;
+}
+
+.con2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 500px;
+    flex-grow: 5;
+
+}
+
+.con2 i {
+    font-size: 15px;
+    color: #6f6f6f;
+}
+
+.con2 button {
+    background-color: #313131;
+    border: none;
+
+    margin-left: 0px;
+    height: 27px;
+    min-width: 50px;
+    width: 60px;
+}
+
+.con2 input {
+    font-size: 17px;
+    width: 10%;
+    padding-left: 12px;
+    flex-basis: 500px;
+    min-width: 100px;
+    color: #cfcfcf;
+    background-color: #121212;
+    height: 30px;
+    border: solid 1px #313131;
+    margin-left: 40px;
+}
+
+.con2 input :focus {
+    border: none;
+}
+
+.con3 {
+    flex-grow: 2;
+}
+
+.con3 .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con3 i {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.con3 .tooltip {
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #4a4a4a;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 50px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 60px;
+    font-size: 10px;
+    padding: 5px;
+    top: 30px;
+    transform: translateX(-40px);
+}
+
+.con3 i:hover .tooltip {
+    transition: all 0.5s ease;
+    opacity: 0.8;
+
+}
+
+.con3 i:hover {
+    cursor: pointer;
+}
+
+.con4 {
+    flex-grow: 1
+    
+}
+
+@media only screen and (max-width:600px) {
+    .con2 {
+        display: none;
+    }
+
+}
+.sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    overflow: hidden;
+    background-color: #212121;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.sideBar.active {
+    width: 60px;
+}
+.project.active {
+    top: 50px;
+    position: fixed;
+    width: calc(100% - 50px);
+    left: 60px;
+    height: calc(100% - 50px);
+}
+.project {
+    top: 50px;
+    overflow: auto;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    height: calc(100% - 50px);
+
+}
+.textBig {
+    font-size: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.textSmall {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: gray;
+}
+.line{
+    width: 75%;
+    height: 0.5px;
+    margin: 15px;
+    background-color: gray;
+}
+.imgMain{
+    width: 100%;
+    
+}
+.projectcon{
+    width: 100%;
+    height: auto;
+  
+    display: grid;
+    grid-template-columns: 60% 30%;
+}
+@media (min-width:480px) {
+    .projectcon{
+        grid-template-columns: 100% ;
+    }
+   
+}

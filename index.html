@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mikołaj Gładysz CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+
+        
+
+        .project {
+           
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+            row-gap: 5px;
+            padding: 20px;
+            column-gap: 10px;
+           
+
+        }
+
+       
+
+        .video {
+            display: flex;
+            color: #cfcfcf;
+            height: 0px;
+            position: relative;
+            overflow: hidden;
+            padding-top: 100%;
+        }
+
+        .video>* {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        }
+
+        .imgCon {
+            width: 100%;
+            padding-top: 56.25%;
+
+            overflow: hidden;
+        }
+
+        .imgCon img {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .description {
+
+            top: 60%;
+            width: 100%;
+            height: 40%;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 50% 40%;
+        }
+
+        .description div {
+
+            overflow: hidden;
+        }
+
+        .description .avatarImg {
+            margin-top: 9%;
+            width: 60%;
+
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .description .avatar {
+            text-align: center;
+        }
+
+        .title {
+            overflow: hidden;
+            font-weight: 520;
+            line-height: 1;
+            text-overflow: ellipsis;
+            max-height: 35px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+        .title span {
+            font-size: 17px;
+            text-align: justify;
+            color: white;
+        }
+
+        .views {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .views i {
+            font-size: 10px;
+        }
+
+        .views span {
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .video:hover {
+            cursor: pointer;
+        }
+
+        .video:hover .thumbnail {
+            animation: thumbnailTransition 0s forwards;
+        }
+
+        .tn4 {
+            animation-delay: 0.2s !important;
+        }
+
+        .tn3 {
+            animation-delay: 1.2s !important;
+        }
+
+        .tn2 {
+            animation-delay: 2.2s !important;
+        }
+
+        .tn1 {
+            animation-delay: 4.2s !important;
+        }
+
+        @keyframes thumbnailTransition {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+  
+        
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+
+
+
+            <div class="headercon con1">
+                <div class="menu" id="button"><i class='bx bx-menu'></i></div>
+                 <a href="./index.html"><h1 class="author"> Mikołaj Gładysz</h1></a>   
+            </div>
+            <div class="headercon con2">
+
+                <input type="text" placeholder="Search">
+                <button class="serchButton"><i class='bx bx-search'></i></button>
+
+            </div>
+            <div class="headercon con3">
+
+                <div class="contact">
+                  <a href="./contact.html"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a> 
+
+                   <a href="./aboutme.html"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
+
+                   <a href="./info.html">  <i class='bx bxs-info-circle'><span class="tooltip">Information</span></i></a>
+
+                </div>
+            </div>
+            <div class="headercon con4">
+              <a href="./image/cvImage.jpg"> <img src="image/cvImage.jpg" style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;"></a> 
+           
+            </div>
+        </div>
+
+        <div class="sideBar">
+            <ul class="nav List">
+                <li>
+                  <a href="./index.html"> <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div></a> 
+
+                </li>
+
+                <li>
+                <a href="./future.html">    <div class="sideBtn"><i class='bx bxs-compass'></i>Future projects</div></a>
+
+                </li>
+
+                <li>
+                <a href="./allProjects.html">    <div class="sideBtn"><i class='bx bxs-folder-open'></i>All projects</div></a>
+
+                </li>
+            </ul>
+            
+        </div>
+
+        <div class="project">
+            <a href="./project2.html">
+            <div class="video">
+
+                <div class="imgCon">
+                    <img src="image/Project2/img4.jpg" alt="" class="thumbnail tn1">
+                    <img src="image/Project2/img3.jpg" alt="" class="thumbnail tn2">
+                    <img src="image/Project2/img2.jpg" alt="" class="thumbnail tn3">
+                    <img src="image/Project2/img1.jpg" alt="" class="thumbnail tn4">
+                </div>
+                <div class="description">
+
+                    <div class="avatar"><img src="image/cvImage.jpg" alt="" class="avatarImg">
+
+                    </div>
+                    <div class="title"><span>
+                           My YouTube Stylised CV Website
+                        </span></div>
+                    <div ></div>
+                    <div class="views">
+                        <span>
+                            Mikołaj<i class='bx bxs-check-circle'></i>
+                        </span>
+                        <span>
+                            2M views 4 days ago
+                        </span>
+
+                    </div>
+
+                </div>
+            
+            </div>
+        </a>
+        <a href="./project3.html">
+            <div class="video">
+
+                <div class="imgCon">
+                    <img src="image/Project3/img4.jpg" alt="" class="thumbnail tn1">
+                    <img src="image/Project3/img3.jpg" alt="" class="thumbnail tn2">
+                    <img src="image/Project3/img2.jpg" alt="" class="thumbnail tn3">
+                    <img src="image/Project3/img1.jpg" alt="" class="thumbnail tn4">
+                </div>
+                <div class="description">
+
+                    <div class="avatar"><img src="image/cvImage.jpg" alt="" class="avatarImg">
+
+                    </div>
+                    <div class="title"><span>
+                           Dogs App, Android Training Project
+                        </span></div>
+                    <div ></div>
+                    <div class="views">
+                        <span>
+                            Mikołaj<i class='bx bxs-check-circle'></i>
+                        </span>
+                        <span>
+                            4M views 2 days ago
+                        </span>
+
+                    </div>
+
+                </div>
+            
+            </div>
+        </a>
+        <a href="./project4.html"> <div class="video">
+
+            <div class="imgCon">
+                <img src="image/Project4/img1.jpg" alt="" class="thumbnail tn1">
+                <img src="image/Project4/img1.jpg" alt="" class="thumbnail tn2">
+                <img src="image/Project4/img1.jpg" alt="" class="thumbnail tn3">
+                <img src="image/Project4/img1.jpg" alt="" class="thumbnail tn4">
+            </div>
+            <div class="description">
+
+                <div class="avatar"><img src="image/cvImage.jpg" alt="" class="avatarImg">
+
+                </div>
+                <div class="title"><span>
+                        Its kinda empty...
+                    </span></div>
+                <div ></div>
+                <div class="views">
+                    <span>
+                        Mikołaj<i class='bx bxs-check-circle'></i>
+                    </span>
+                    <span>
+                        2.5M views 10 days ago
+                    </span>
+
+                </div>
+
+            </div>
+        
+        </div></a>
+      
+            
+            </div>
+
+              
+                </div>
+
+        
+    </div>
+    <script>
+        let btn = document.querySelector("#button");
+        let sidebar = document.querySelector(".sideBar");
+        let project = document.querySelector(".project")
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+            project.classList.toggle("active");
+
+        }
+    </script>
+</body>
+
+</html>

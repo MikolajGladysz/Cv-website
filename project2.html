@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mikołaj Gładysz CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+         a {
+            text-decoration: none;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+       .project h1 {
+            color: whitesmoke;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+     
+
+        .project {
+            padding: 30px;
+            line-height: 30px;
+        }
+        .item1{grid-area: text1;}
+        .item2{grid-area:text2;}
+        @media screen and (max-width:970px) {
+            .div1{
+                grid-template-areas:'img text1'
+            'text2 text2' !important;
+       
+            }
+        }
+        @media screen and (max-width:970px) {
+            .projectcon{
+               display: flex;
+               flex-direction: column;
+            }
+       
+            
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+
+
+
+            <div class="headercon con1">
+                <div class="menu" id="button"><i class='bx bx-menu'></i></div>
+                 <a href="./index.html"><h1 class="author"> Mikołaj Gładysz</h1></a>   
+            </div>
+            <div class="headercon con2">
+
+                <input type="text" placeholder="Search">
+                <button class="serchButton"><i class='bx bx-search'></i></button>
+
+            </div>
+            <div class="headercon con3">
+
+                <div class="contact">
+                  <a href="./contact.html"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a> 
+
+                   <a href="./aboutme.html"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
+
+                   <a href="./info.html">  <i class='bx bxs-info-circle'><span class="tooltip">Information</span></i></a>
+
+                </div>
+            </div>
+            <div class="headercon con4">
+                <img src="image/cvImage.jpg" style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;">
+            </div>
+        </div>
+
+        <div class="sideBar">
+            <ul class="nav List">
+                <li>
+                    <a href="./index.html"> <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div></a> 
+
+                </li>
+
+                <li>
+                <a href="./future.html">    <div class="sideBtn"><i class='bx bxs-compass'></i>Future projects</div></a>
+
+                </li>
+
+                <li>
+                <a href="./allProjects.html">    <div class="sideBtn"><i class='bx bxs-folder-open'></i>All projects</div></a>
+
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="projectcon div1" style=" grid-template-areas:'img text1'
+            'img text2'
+            ">
+            <img src="./image/Project2/show.gif" alt="GIF" class="imgMain" style="grid-area: img;">
+         <div style="margin: 20px; width: 100% ; text-align: center;" class="item1">
+            <h1 >Cv Website</h1>
+             <p style="color: #3ea6ff;">
+              CSS / JAVASCRIPT / HTML
+            </p>
+        <div class="line" style="width: 100%; margin: 0px;"></div>
+        <p class="textSmall" style="text-align:start;">Responsive website stylised as YouTube that contains information about me and my portfolio. All my project can be accesed from home page and they imitate YouTube videos.</p>
+          </div>
+          <div class="item2" style="margin: 20px; width: 100% ; text-align: center;">
+        <p class="textBig">Why YouTube?</p>
+        <p class="textSmall" style="text-align: start;">I came up with this idea when I saw a similar site, but in the style of spotify. It immediately caught my attention and I thought it was a great idea to stand out.  Then I thought making it like youtube would be an even better idea, it would allow me to showcase my projects in an interesting way.</p>
+        <p class="textSmall"  style="text-align: start;">To best reflect the original layout, I used a couple of elements that I want to talk about </p>
+    </div>
+        </div>
+       
+        
+            <div class="projectcon" style="grid-template-columns:20% 30% 40%; margin-top: 50px; margin-bottom: 50px;">
+               
+                     <div>
+                        <p class="textBig">Top bar and side bar</p>
+                <p class="textSmall">They are div with fixed position, that I included in all layouts to provide easy navigation for user. </p>
+                <p class="textSmall">After button click, the content shrinks to the point where only icons are visible. This functionality is made possible by js onClick() event.</p></div>
+                  
+                <img src="./image/Project2/sidebar.gif" class="imgMain"><div>
+        </div>
+        </div>
+      <div style="  display: flex; flex-direction: row; ">
+        <div style="width: 100%; padding: 10px;"> <p class="textBig" style="margin-top: 40px; text-align: center;">Grid of videos</p>
+            <p class="textSmall">
+                Main content contains videos displayed in a grid, that adjust size to the screen resolution.  
+            </p>
+            <p class="textSmall">Each video item has fixed aspect ratio. To achieve this I did not assign height, insted I used padding-top at 100%. Since padding-top value is based on width of an element, the result is perfect square. </p>
+            <p class="textSmall">Same trick was used to archeive 16:9 aspect ratio on thumbnail </p>
+         </div>
+         <div style="width: 100%; padding: 10px;"> 
+        <p class="textBig" style="margin-top: 40px; text-align: center;">Thumbnail animation</p>
+        <p class="textSmall">Thumbnails are four same-sized images with the same position. When user hovers over the video, each image is changing its display to none with different time delays. The result is animation of a slide show.</p>
+        </div>
+        </div>
+        <div class="line" style="margin-bottom: 50px;"></div>
+       <h1>TODO list</h1>
+        <p class="textBig">Search bar functionality</p>
+        <p class="textSmall">
+            Search bar is purely for aesthetic reasons, but in the future I would like it to be dropdown menu with programming languages. After selecting the option, the main content will show only those projects in which the given language was used.
+        </p> 
+        <p class="textBig">Adding video from browser</p>
+        <p class="textSmall">I would like to add more efficient way of adding project. Right now it`s matter of adding HTML elements, because all styles are defined, but I`m too lazy for that. The in-browser editor would be handufll.</p>
+       <div class="line"></div>
+       <div class="textBig">Full code</div>
+       <a style="color: #3ea6ff;">My github</a>
+       <a style="color: #3ea6ff;" href="./contact.html"> <p> Contact </p></a>
+    </div>
+    </div>
+    <script>
+        let btn = document.querySelector("#button");
+        let sidebar = document.querySelector(".sideBar");
+        let project = document.querySelector(".project")
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+            project.classList.toggle("active");
+
+        }
+    </script>
+</body>
+
+</html>

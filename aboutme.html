@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mikołaj Gładysz CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+          .project {
+            padding: 30px;
+            line-height: 30px;
+        }
+        .project h1 {
+            color: whitesmoke;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <div class="content">
+            <div class="header">
+    
+    
+    
+                <div class="headercon con1">
+                    <div class="menu" id="button"><i class='bx bx-menu'></i></div>
+                    <a href="./index.html"><h1 class="author"> Mikołaj Gładysz</h1></a>   
+                </div>
+                <div class="headercon con2">
+    
+                    <input type="text" placeholder="Search">
+                    <button class="serchButton"><i class='bx bx-search'></i></button>
+    
+                </div>
+                <div class="headercon con3">
+    
+                    <div class="contact">
+                      <a href="./contact.html"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a> 
+    
+                       <a href="aboutme.html"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
+    
+                       <a href="./info.html">  <i class='bx bxs-info-circle'><span class="tooltip">Information</span></i></a>
+    
+                    </div>
+                </div>
+                <div class="headercon con4">
+                    <a href="./image/cvImage.jpg"> <img src="image/cvImage.jpg" style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;"></a>                 </div>
+            </div>
+    
+            <div class="sideBar">
+                <ul class="nav List">
+                    <li>
+                        <a href="./index.html"> <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div></a> 
+
+                    </li>
+    
+                    <li>
+                    <a href="./future.html">    <div class="sideBtn"><i class='bx bxs-compass'></i>Future projects</div></a>
+    
+                    </li>
+    
+                    <li>
+                    <a href="./allProjects.html">    <div class="sideBtn"><i class='bx bxs-folder-open'></i>All projects</div></a>
+    
+    
+                    </li>
+                </ul>
+            </div>
+    
+<div class="project">
+    
+    <h1>About me</h1>
+    <p class="textBig">Quick introduction</p>
+    <p class="textSmall">Hello! My name is Mikołaj. I come from small Polish town, close to the sea. I am a novice programmer, who is just taking his first steps in his career, with a dream to become senior developer
+    </p>
+    <div class="line"></div>
+    <p class="textBig">My jurney with programming</p>
+    <p class="textSmall">When I was 13 years old, youtube and computer games were my main occupation. One day I came across a live stream of a game developer and I couldn't get over the fact that a streamer, that is my age could do things I could only dream of. I felt incredibly jealous and decided to learn to program myself</p>
+    <div class="line"></div>
+    <p class="textBig">Starting from scratch...</p>
+    <p class="textSmall">...literally, I started by making games on scratch. It was very educational and entertaining. Soon after I have learned basics of C++ and at this point, programming became my passion</p>
+    <div class="line"></div>
+    <p class="textBig">My future career</p>
+    <p class="textSmall">I didn't specialize in any particular field, I love frontend, backend, testing, basically anything IT related. In the future I would like to explore topics related to artificial intelligence, but right now, I am looking for any opportunity to broaden my skills</p>
+    <div class="line"></div>
+    <p class="textBig">Life beyond programming</p>
+    <p class="textSmall">When I step away from the computer, I do calisthenics, work out at the gym and play chess ( my ranking is 1300 on lichess )</p>
+</div>
+        </div>
+        <script>
+            let btn = document.querySelector("#button");
+            let sidebar = document.querySelector(".sideBar");
+            let project = document.querySelector(".project")
+            btn.onclick = function () {
+                sidebar.classList.toggle("active");
+                project.classList.toggle("active");
+    
+            }
+        </script>
+</body></html>
