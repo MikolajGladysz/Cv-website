@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    huj
-    {{content | safe }} 
-    {% header.njk %}
-    <h1 style="z-index: 200000; background-color: rebeccapurple; position: fixed; width: 200px; height: 200px; top: 0;">{{title}}</h1>
-   {{content | safe }} 
+
+    {% include 'header.njk' %}
+    {% include 'sidebar.njk' %}
+   {{ content | safe}}
+   {% include 'footer.njk' %}
 </body>
 </html>

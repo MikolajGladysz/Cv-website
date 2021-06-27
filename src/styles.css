@@ -483,11 +483,11 @@ border-radius: 10px;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: clamp(0.7rem,4vmax,1.2rem);
+    font-size: clamp(0.7rem,4vmax,1.4rem);
 }
 
 .titleU {
-    margin-top: 3px;
+    margin-top: 15px;
     font-size: clamp(0.3rem,1.5vmax,0.7rem);
 }
 
