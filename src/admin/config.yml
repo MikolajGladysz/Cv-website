@@ -1,16 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/image"
+public_folder: "/image"
 collections:
    name: "videos"
    label: "Videos"
    folder: "src/videos"
    create: true
    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-backend:
-  name: git-gateway
-  branch: main
-media_folder: "public/image"
-public_folder: "/image"
-
-fields:
+    fields:
      - { label: "Title", name: "title", widget: "string"}
      - { label: "Description", name: "description", widget: "string"}
      - { label: "Author", name: "author", widget: "string"}
