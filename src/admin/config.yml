@@ -4,7 +4,7 @@ backend:
 media_folder: "public/image"
 public_folder: "/image"
 collections:
-   name: "videos"
+   - name: "videos"
    label: "Videos"
    folder: "src/videos"
    create: true
