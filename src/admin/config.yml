@@ -1,59 +1,23 @@
---- 
-backend: 
-  branch: main
+collections:
+  - name: "videos"
+  - label: "Videos"
+  - folder: "src/videos"
+  - create: true
+  - slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+   - fields:
+     - { label: "Title", name: "title", widget: "string"}
+     - { label: "Description", name: "description", widget: "string"}
+     - { label: "Author", name: "author", widget: "string"}
+     - { label: "Date", name: "date", widget: "datetime"}
+     - { label: "Image Alt", name: "imageAlt", widget: "string"}
+     - { label: "Featured Image1", name: "image1", widget: "image"}
+     - { label: "Featured Image2", name: "image2", widget: "image"}
+     - { label: "Featured Image3", name: "image3", widget: "image"}
+     - { label: "Featured Image4", name: "image4", widget: "image"}
+     - { label: "Body", name: "body", widget: "markdown"}
+     - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+backend:
   name: git-gateway
-collections: 
-  create: true
-  fields: 
-    - 
-      label: Title
-      name: title
-      widget: string
-    - 
-      label: Description
-      name: description
-      widget: string
-    - 
-      label: Author
-      name: author
-      widget: string
-    - 
-      label: Date
-      name: date
-      widget: datetime
-    - 
-      label: "Image Alt"
-      name: imageAlt
-      widget: string
-    - 
-      label: "Featured Image1"
-      name: image1
-      widget: image
-    - 
-      label: "Featured Image2"
-      name: image2
-      widget: image
-    - 
-      label: "Featured Image3"
-      name: image3
-      widget: image
-    - 
-      label: "Featured Image4"
-      name: image4
-      widget: image
-    - 
-      label: Body
-      name: body
-      widget: markdown
-    - 
-      default: 
-        - post
-      label: Tags
-      name: tags
-      widget: list
-  folder: src/videos
-  label: Videos
-  name: videos
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-media_folder: public/image
-public_folder: /image
+  branch: main
+media_folder: "public/image"
+public_folder: "/image"
