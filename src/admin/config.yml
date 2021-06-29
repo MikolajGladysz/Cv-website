@@ -20,20 +20,20 @@ collections:
        - { label: "Featured Image3", name: "image3", widget: "image" }
        - { label: "Featured Image4", name: "image4", widget: "image" }
        - { label: "Tags", name: "tags", widget: "list", default: ["post"] }  
-       - { label: "Paragraph 1 Title", name: "p1t", widget: "string" }
-       - { label: "Paragraph 1 content", name: "p1c", widget: "markdown" }
-       - { label: "Paragraph 2 Title", name: "p2t", widget: "string" }
-       - { label: "Paragraph 2 content", name: "p2c", widget: "markdown" }
-       - { label: "Column 1 Title Left", name: "c1tl", widget: "string" }
-       - { label: "Column 1 Content Left", name: "c1cl", widget: "markdown" }
-       - { label: "Column 1 Title Right", name: "c1tr", widget: "string" }
-       - { label: "Column 1 Content Right", name: "c1cr", widget: "markdown" }
-       - { label: "Column 2 Title Left", name: "c2tl", widget: "string" }
-       - { label: "Column 2 Content Left", name: "c2cl", widget: "markdown" }
-       - { label: "Column 2 Title Middle", name: "c2tm", widget: "string" }
-       - { label: "Column 2 Content Middle", name: "c2cm", widget: "markdown" }
-       - { label: "Column 2 Title Right", name: "c2tr", widget: "string" }
-       - { label: "Column 2 Content Right", name: "c2cr", widget: "markdown" }
-       - { label: "Paragraph 3 Title", name: "p3t", widget: "string" }
-       - { label: "Paragraph 3 Content", name: "p3c", widget: "markdown" }
+       - { label: "Paragraph 1 Title", name: "p1t", widget: "string", required: false }
+       - { label: "Paragraph 1 content", name: "p1c", widget: "markdown", required: false }
+       - { label: "Paragraph 2 Title", name: "p2t", widget: "string", required: false }
+       - { label: "Paragraph 2 content", name: "p2c", widget: "markdown", required: false }
+       - { label: "Column 1 Title Left", name: "c1tl", widget: "string", required: false }
+       - { label: "Column 1 Content Left", name: "c1cl", widget: "markdown", required: false }
+       - { label: "Column 1 Title Right", name: "c1tr", widget: "string", required: false }
+       - { label: "Column 1 Content Right", name: "c1cr", widget: "markdown", required: false }
+       - { label: "Column 2 Title Left", name: "c2tl", widget: "string", required: false }
+       - { label: "Column 2 Content Left", name: "c2cl", widget: "markdown", required: false }
+       - { label: "Column 2 Title Middle", name: "c2tm", widget: "string", required: false }
+       - { label: "Column 2 Content Middle", name: "c2cm", widget: "markdown", required: false }
+       - { label: "Column 2 Title Right", name: "c2tr", widget: "string", required: false }
+       - { label: "Column 2 Content Right", name: "c2cr", widget: "markdown", required: false }
+       - { label: "Paragraph 3 Title", name: "p3t", widget: "string", required: false }
+       - { label: "Paragraph 3 Content", name: "p3c", widget: "markdown", required: false }
        - { label: "Github Link", name: "gitlink", widget: "string" }
