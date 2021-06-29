@@ -11,7 +11,7 @@ collections:
      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
      fields:
        - { label: "Title", name: "title", widget: "string" }
-       - { label: "Description", name: "description", widget: "string" }
+       - { label: "Description", name: "description-short", widget: "markdown" }
        - { label: "Author", name: "author", widget: "string" }
        - { label: "Date", name: "date", widget: "datetime" }
        - { label: "Image Alt", name: "imageAlt", widget: "string" }
@@ -19,5 +19,21 @@ collections:
        - { label: "Featured Image2", name: "image2", widget: "image" }
        - { label: "Featured Image3", name: "image3", widget: "image" }
        - { label: "Featured Image4", name: "image4", widget: "image" }
-       - { label: "Body", name: "body", widget: "markdown" }
        - { label: "Tags", name: "tags", widget: "list", default: ["post"] }  
+       - { label: "Paragraph 1 Title", name: "p1t", widget: "markdown" }
+       - { label: "Paragraph 1 content", name: "p1c", widget: "markdown" }
+       - { label: "Paragraph 2 Title", name: "p2t", widget: "markdown" }
+       - { label: "Paragraph 2 content", name: "p2c", widget: "markdown" }
+       - { label: "Column 1 Title Left", name: "c1tl", widget: "markdown" }
+       - { label: "Column 1 Content Left", name: "c1cl", widget: "markdown" }
+       - { label: "Column 1 Title Right", name: "c1tr", widget: "markdown" }
+       - { label: "Column 1 Content Right", name: "c1cr", widget: "markdown" }
+       - { label: "Column 2 Title Left", name: "c2tl", widget: "markdown" }
+       - { label: "Column 2 Content Left", name: "c2cl", widget: "markdown" }
+       - { label: "Column 2 Title Middle", name: "c2tm", widget: "markdown" }
+       - { label: "Column 2 Content Middle", name: "c2cm", widget: "markdown" }
+       - { label: "Column 2 Title Right", name: "c2tr", widget: "markdown" }
+       - { label: "Column 2 Content Right", name: "c2cr", widget: "markdown" }
+       - { label: "Paragraph 3 Title", name: "p3t", widget: "markdown" }
+       - { label: "Paragraph 3 Content", name: "p3c", widget: "markdown" }
+       - { label: "Github Link", name: "gitlink", widget: "markdown" }
