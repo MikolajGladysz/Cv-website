@@ -6,7 +6,6 @@ image2: /image/Project2/img3.jpg
 image1: /image/Project2/img4.jpg
 imageAlt: test
 tags: post
-href: ./project2.html
 views: 4M views 9 days ago
 ---
 

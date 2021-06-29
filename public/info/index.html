@@ -1,39 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Mikołaj Gładysz CV</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-         a {
-            text-decoration: none;
-        }
 
-       .project h1 {
-            color: whitesmoke;
-            margin-bottom: 20px;
-            font-weight: lighter;
-        }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-     
-
-        .project {
-            padding: 30px;
-            line-height: 30px;
-        }
-    </style>
 </head>
-
 <body>
-    <div class="content">
-        <div class="header">
 
-
-
+    <header class="header">
             <div class="headercon con1">
                 <button class="menu" id="button"><i class='bx bx-menu'></i></button>
-                 <a href="./index.html"><h1 class="author"> Mikołaj Gładysz</h1></a>   
+                <a href="/index.html">
+                    <h1 class="author"> Mikołaj Gładysz</h1>
+                </a>
             </div>
             <div class="headercon con2">
 
@@ -44,47 +29,96 @@
             <div class="headercon con3">
 
                 <div class="contact">
-                  <a href="./contact.html"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a> 
+                    <a href="/contact"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a>
 
-                   <a href="./aboutme.html"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
+                    <a href="/aboutme"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
 
-                   <a href="./info.html">  <i class='bx bxs-info-circle'><span class="tooltip">Information</span></i></a>
+                    <a href="/info"> <i class='bx bxs-info-circle'><span
+                                class="tooltip">Information</span></i></a>
 
                 </div>
             </div>
             <div class="headercon con4">
-                <a href="./image/cvImage.jpg"> <img src="image/cvImage.jpg" style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;"></a>             </div>
-        </div>
+                <a href="/image/cvImage.jpg"> <img src="/image/cvImage.jpg"
+                        style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;"></a>
 
-        <div class="sideBar">
+            </div>
+        </header>
+       <nav class="sideBar">
             <ul class="nav List">
                 <li>
-                    <a href="./index.html"> <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div></a> 
+                    <a href="/index.html">
+                        <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div>
+                    </a>
 
                 </li>
 
                 <li>
-                <a href="./future.html">    <div class="sideBtn"><i class='bx bxs-compass'></i>Future projects</div></a>
+                    <a href="/future">
+                        <div class="sideBtn"><i class='bx bxs-compass'></i>Future Projects</div>
+                    </a>
 
                 </li>
 
                 <li>
-                <a href="./allProjects.html">    <div class="sideBtn"><i class='bx bxs-folder-open'></i>All projects</div></a>
+                    <a href="/allProjects">
+                        <div class="sideBtn"><i class='bx bxs-folder-open'></i>All projects</div>
+                    </a>
 
                 </li>
             </ul>
-        </div>
 
-        <div class="project">
-            <h1>Website Information</h1>
+        </nav>
+    <div class="project">
+      <div class="page-con">
+            <h1 class="page-h1 line">Website Information</h1>
             <p class="textBig">How does this work?</p>
-            <p class="textSmall">This is my CV website. It contains all of my projects stylised as YouTube videos. If You want to see the project simply click on the "video" thumbnail or title. To come back to the main page, click Home button.</p>
-            <div class="line"></div>
+            <p class="textSmall line">This is my CV website. It contains all of my projects stylised as YouTube videos. If You want to see the project simply click on the "video" thumbnail or title. To come back to the main page, click Home button.</p>
+            
             <p class="textBig">Feedback</p>
-            <p class="textSmall">I have worked hard to make this website as responsive as possible. If You came across any issues, I would be thankfull for feedback. To see more go to <a style="color:#3ea6ff; text-decoration: none;" href="./contact.html">Contact</a></p>
+            <p class="textSmall">I have worked hard to make this website as responsive as possible. If You came across any issues, I would be thankfull for feedback. To see more go to <a class="hyperlink" href="/contact">Contact</a></p>
             <p class="textSmall" style="margin-top: 40px;">One quick note - the search bar has no function and is purely for the aesthetic reasons.</p>
-        </div>
-    </div>
+
+  </div>
+      </div>
+ 
+    <footer class="mainFooter">
+            <section class="footerSection">
+                <a href="/index.html"><button class="footerBtn">
+                        <span class='bx bxs-home'></span>
+                        <p>Home</p>
+                    </button></a>
+            </section>
+            <section class="footerSection"><a href="/future"><button class="footerBtn">
+                        <span class='bx bxs-compass'></span>
+                        <p>Future Projects</p>
+                    </button></a></section>
+            <section class="footerSection main"><a href="/admin"><button class="footerBtn main">
+                        <span class='bx bx-plus-circle addVideo'></span>
+                    </button></a></section>
+            <section class="footerSection"><a href="/allProjects"><button class="footerBtn">
+                        <span class='bx bxs-folder-open'></span>
+                        <p>All Projects</p>
+                    </button></a></section>
+            <section class="footerSection"><a href="/info"><button class="footerBtn">
+                        <span class='bx bxs-info-circle'></span>
+                        <p>About</p>
+                    </button></a></section>
+
+        </footer>
+
+
+   <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
     <script>
         let btn = document.querySelector("#button");
         let sidebar = document.querySelector(".sideBar");
@@ -94,7 +128,5 @@
             project.classList.toggle("active");
 
         }
-    </script>
-</body>
-
+    </script></body>
 </html>

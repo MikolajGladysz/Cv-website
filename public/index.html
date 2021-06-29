@@ -16,7 +16,7 @@
     <header class="header">
             <div class="headercon con1">
                 <button class="menu" id="button"><i class='bx bx-menu'></i></button>
-                <a href="./index.html">
+                <a href="/index.html">
                     <h1 class="author"> Mikołaj Gładysz</h1>
                 </a>
             </div>
@@ -29,17 +29,17 @@
             <div class="headercon con3">
 
                 <div class="contact">
-                    <a href="./contact.html"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a>
+                    <a href="/contact"> <i class='bx bxs-contact'><span class="tooltip">Contact</span></i></a>
 
-                    <a href="./aboutme.html"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
+                    <a href="/aboutme"> <i class='bx bxs-home-heart'><span class="tooltip">About me</span></i></a>
 
-                    <a href="./info.html"> <i class='bx bxs-info-circle'><span
+                    <a href="/info"> <i class='bx bxs-info-circle'><span
                                 class="tooltip">Information</span></i></a>
 
                 </div>
             </div>
             <div class="headercon con4">
-                <a href="./image/cvImage.jpg"> <img src="image/cvImage.jpg"
+                <a href="/image/cvImage.jpg"> <img src="/image/cvImage.jpg"
                         style="border-radius: 50%; width: 40px;height: 40px; margin-top: 5px;"></a>
 
             </div>
@@ -48,14 +48,14 @@
             <ul class="nav List">
                 <li>
                     <a href="/index.html">
-                        <div class="sideBtn btn1"><i class='bx bxs-home'></i>Hoome</div>
+                        <div class="sideBtn btn1"><i class='bx bxs-home'></i>Home</div>
                     </a>
 
                 </li>
 
                 <li>
                     <a href="/future">
-                        <div class="sideBtn"><i class='bx bxs-compass'></i>Future pisnaorojects</div>
+                        <div class="sideBtn"><i class='bx bxs-compass'></i>Future Projects</div>
                     </a>
 
                 </li>
@@ -69,7 +69,8 @@
             </ul>
 
         </nav>
-        <div class="project"><a href="/videos/project-1-dogs-app/">
+    <div class="project">
+      <div class="grid"><a href="/videos/project-1-dogs-app/">
              <article class="video">
 
                     <div class="imgCon">
@@ -113,39 +114,31 @@
 
                 </article></a>}
         
-
-        </div>
+</div>
    
-    <script>
-        let btn = document.querySelector("#button");
-        let sidebar = document.querySelector(".sideBar");
-        let project = document.querySelector(".project")
-        btn.onclick = function () {
-            sidebar.classList.toggle("active");
-            project.classList.toggle("active");
 
-        }
-    </script>
 
+      </div>
+ 
     <footer class="mainFooter">
             <section class="footerSection">
-                <a href="./index.html"><button class="footerBtn">
+                <a href="/index.html"><button class="footerBtn">
                         <span class='bx bxs-home'></span>
                         <p>Home</p>
                     </button></a>
             </section>
-            <section class="footerSection"><a href="./future.html"><button class="footerBtn">
+            <section class="footerSection"><a href="/future"><button class="footerBtn">
                         <span class='bx bxs-compass'></span>
                         <p>Future Projects</p>
                     </button></a></section>
-            <section class="footerSection main"><a href="./addVideo.html"><button class="footerBtn main">
+            <section class="footerSection main"><a href="/admin"><button class="footerBtn main">
                         <span class='bx bx-plus-circle addVideo'></span>
                     </button></a></section>
-            <section class="footerSection"><a href="./allProjects.html"><button class="footerBtn">
+            <section class="footerSection"><a href="/allProjects"><button class="footerBtn">
                         <span class='bx bxs-folder-open'></span>
                         <p>All Projects</p>
                     </button></a></section>
-            <section class="footerSection"><a href="./info.html"><button class="footerBtn">
+            <section class="footerSection"><a href="/info"><button class="footerBtn">
                         <span class='bx bxs-info-circle'></span>
                         <p>About</p>
                     </button></a></section>
@@ -164,5 +157,14 @@
       });
     }
   </script>
-</body>
+    <script>
+        let btn = document.querySelector("#button");
+        let sidebar = document.querySelector(".sideBar");
+        let project = document.querySelector(".project")
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+            project.classList.toggle("active");
+
+        }
+    </script></body>
 </html>
