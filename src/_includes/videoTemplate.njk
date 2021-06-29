@@ -2,48 +2,48 @@
 layout: 'base.njk' 
 ---
 <div class="page-con">
-    <h1 class="page-h1">Project name</h1>
-    <h2 class="page-h2">Tags</h2>
+    <h1 class="page-h1">{{post.data.title}}</h1>
+    <h2 class="page-h2">{{post.data.tags}}</h2>
     <section class="video-section">
-        <p class="textBig">Lorem ipsum dolor sit amet.</p>
-        <p class="textSmall line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore sint ad incidunt provident, architecto illo beatae dolores inventore debitis.</p>
+        <p class="textBig">{{post.data.p1t}}</p>
+        <p class="textSmall line">{{post.data.p1c}}</p>
     </section>
     <section class="video-section">
-        <p class="textBig">Lorem ipsum dolor sit amet.</p>
-        <p class="textSmall line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt maiores eaque corrupti, tempora molestiae! Voluptatum officiis aliquid blanditiis omnis!</p>
+        <p class="textBig">{{post.data.p2t}}</p>
+        <p class="textSmall line">{{post.data.p2c}}</p>
     </section>
     <section class="video-section">
         <div class="page-column2 line">
             <div>
-                <p class="textBig textCenter">Lorem ipsum dolor sit amet.</p>
-                <p class="textSmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non placeat, ullam debitis voluptate excepturi similique accusamus facere eveniet mollitia dolores?</p>
+                <p class="textBig textCenter">{{post.data.c1tl}}</p>
+                <p class="textSmall">{{post.data.c1cl}}</p>
             </div>
             <div>
-                <p class="textBig textCenter">Lorem ipsum dolor sit amet.</p>
-                <p class="textSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus possimus excepturi reprehenderit voluptatum facilis sunt illum, ea iste fugiat debitis!</p>
+                <p class="textBig textCenter">{{post.data.c1tr}}</p>
+                <p class="textSmall">{{post.data.c1cr}}</p>
             </div>
         </div>
     </section class="video-section">
     <div class="page-column3 line">
         <div>
-            <p class="textBig textCenter">Lorem ipsum dolor sit amet.</p>
-            <p class="textSmall">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deserunt voluptatem officiis quae laborum, reiciendis cumque alias dolorem eius harum?</p>
+            <p class="textBig textCenter">{{post.data.c2tl}}</p>
+            <p class="textSmall">{{post.data.c2cl}}</p>
         </div>
         <div>
-            <p class="textBig textCenter">Lorem ipsum dolor sit amet.</p>
-            <p class="textSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius veritatis quo molestias incidunt temporibus perferendis porro impedit labore pariatur.</p>
+            <p class="textBig textCenter">{{post.data.c2tm}}.</p>
+            <p class="textSmall">{{post.data.c2cm}}</p>
         </div>
         <div>
-            <p class="textBig textCenter">Lorem ipsum dolor sit amet.</p>
-            <p class="textSmall">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis recusandae necessitatibus iste quis corrupti sed quod ex magni eveniet cum!</p>
+            <p class="textBig textCenter">{{post.data.c2tr}}</p>
+            <p class="textSmall">{{post.data.c2cr}}</p>
         </div>
 
     </div>
     <section class="video-section">
-        <p class="textBig">Lorem ipsum dolor sit amet.</p>
-        <p class="textSmall line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque hic ut eos est in alias ex error natus voluptates beatae!</p>
+        <p class="textBig">{{post.data.p3t}}</p>
+        <p class="textSmall line">{{post.data.p3c}}</p>
     </section>
     {{ content | safe }}
     <p class="textBig" style="margin-top:20px;">More Info</p>
-    <p class="textSmall">Github: <a href="#" class="hyperlink">Github</a></p>
+    <p class="textSmall">Github: <a href="#" class="hyperlink">{{post.data.gitlink}}</a></p>
 </div>
