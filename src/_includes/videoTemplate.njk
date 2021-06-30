@@ -2,48 +2,48 @@
 layout: 'base.njk' 
 ---
 <div class="page-con">
-    <h1 class="page-h1">{{post.data.title}}</h1>
-    <h2 class="page-h2">{{post.data.tags}}</h2>
+    <h1 class="page-h1"> {{ title }} </h1>
+    <h2 class="page-h2">{{ tags }}</h2>
     <section class="video-section">
-        <p class="textBig">{{post.data.p1t}}</p>
-        <p class="textSmall line">{{post.data.p1c}}</p>
+        <p class="textBig">{{ p1t }}</p>
+        <p class="textSmall line">{{p1c}}</p>
     </section>
     <section class="video-section">
-        <p class="textBig">{{post.data.p2t}}</p>
-        <p class="textSmall line">{{post.data.p2c}}</p>
+        <p class="textBig">{{p2t}}</p>
+        <p class="textSmall line"> {{ p2c }} </p>
     </section>
     <section class="video-section">
         <div class="page-column2 line">
             <div>
-                <p class="textBig textCenter">{{post.data.c1tl}}</p>
-                <p class="textSmall">{{post.data.c1cl}}</p>
+                <p class="textBig textCenter">{{c1tl}}</p>
+                <p class="textSmall">{{c1cl}}</p>
             </div>
             <div>
-                <p class="textBig textCenter">{{post.data.c1tr}}</p>
-                <p class="textSmall">{{post.data.c1cr}}</p>
+                <p class="textBig textCenter">{{c1tr}}</p>
+                <p class="textSmall">{{c1cr}}</p>
             </div>
         </div>
     </section class="video-section">
     <div class="page-column3 line">
         <div>
-            <p class="textBig textCenter">{{post.data.c2tl}}</p>
-            <p class="textSmall">{{post.data.c2cl}}</p>
+            <p class="textBig textCenter">{{c2tl}}</p>
+            <p class="textSmall">{{c2cl}}</p>
         </div>
         <div>
-            <p class="textBig textCenter">{{post.data.c2tm}}.</p>
-            <p class="textSmall">{{post.data.c2cm}}</p>
+            <p class="textBig textCenter">{{c2tm}}.</p>
+            <p class="textSmall">{{c2cm}}</p>
         </div>
         <div>
-            <p class="textBig textCenter">{{post.data.c2tr}}</p>
-            <p class="textSmall">{{post.data.c2cr}}</p>
+            <p class="textBig textCenter">{{c2tr}}</p>
+            <p class="textSmall">{{c2cr}}</p>
         </div>
 
     </div>
     <section class="video-section">
-        <p class="textBig">{{post.data.p3t}}</p>
-        <p class="textSmall line">{{post.data.p3c}}</p>
+        <p class="textBig">{{p3t}}</p>
+        <p class="textSmall line">{{p3c}}</p>
     </section>
-    {{ content | safe }}
+
     <p class="textBig" style="margin-top:20px;">More Info</p>
-    <p class="textSmall">Github: <a href="#" class="hyperlink">{{post.data.gitlink}}</a></p>
+    <p class="textSmall">Github: <a href="#" class="hyperlink">{{gitlink}}</a></p>
 </div>
