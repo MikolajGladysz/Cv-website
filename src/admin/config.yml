@@ -11,7 +11,7 @@ collections:
      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
      fields:
        - { label: "Title", name: "title", widget: "string" }
-       - { label: "Description", name: "description-short", widget: "string" }
+       - { label: "Description", name: "description_short", widget: "string" }
        - { label: "Author", name: "author", widget: "string" }
        - { label: "Date", name: "date", widget: "datetime" }
        - { label: "Image Alt", name: "imageAlt", widget: "string" }

@@ -527,6 +527,7 @@ border-radius: 10px;
 .textSmall {
     font-size: clamp(0.9rem,1.5vw,1.2rem);
     line-height: 20px;
+    word-wrap: break-word;
     color: gray;
 }
 .line{
