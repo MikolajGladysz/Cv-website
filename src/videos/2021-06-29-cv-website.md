@@ -1,8 +1,6 @@
 ---
 title: Cv Website
-description-short: Responsive website stylised as YouTube that contains
-  information about me and my portfolio. All my project can be accesed from home
-  page and they imitate YouTube videos.
+description_short: My own CV website, stylised as YouTube!
 author: Mikołaj
 date: 2021-06-29T18:51:42.141Z
 imageAlt: Thumbnail slide
@@ -30,6 +28,9 @@ p2c: >-
 
   After button click, the content shrinks to the point where only icons are visible. This functionality is made possible by js onClick() event.
 c1tl: Grid of videos
+description-short: Responsive website stylised as YouTube that contains
+  information about me and my portfolio. All my project can be accesed from home
+  page and they imitate YouTube videos.
 c1cl: " Main content contains videos displayed in a grid, that adjust size to
   the screen resolution. Each video item has fixed aspect ratio. To achieve this
   I did not assign height, insted I used padding-top at 100%. Since padding-top
