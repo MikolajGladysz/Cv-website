@@ -34,11 +34,13 @@
   </script>
     <script>
         let btn = document.querySelector("#button");
+        let tagsCon = document.querySelector(".tagsCon");
         let sidebar = document.querySelector(".sideBar");
         let project = document.querySelector(".project")
         btn.onclick = function () {
             sidebar.classList.toggle("active");
             project.classList.toggle("active");
+            tagsCon.classList.toggle("active");
 
         }
     </script></body>

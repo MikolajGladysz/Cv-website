@@ -76,7 +76,7 @@
                     <section class="description-detail">
                     
                         <p class="title-detail">Cv Website</p>
-                        <p class="views-detail">Mikołaj 4.7M views 4 days ago</p>
+                        <p class="views-detail">Mikołaj  views 4 days ago</p>
                         <p class="description-short">My own CV website, stylised as YouTube!</p>
                         
                     </section>
@@ -86,7 +86,7 @@
                     <section class="description-detail">
                     
                         <p class="title-detail">Dogs App</p>
-                        <p class="views-detail">Mikołaj 4.7M views 4 days ago</p>
+                        <p class="views-detail">Mikolaj  views 4 days ago</p>
                         <p class="description-short">A modern, educational Android app allowing to gain knowledge about different breeds of dogs.</p>
                         
                     </section>
@@ -133,11 +133,13 @@
   </script>
     <script>
         let btn = document.querySelector("#button");
+        let tagsCon = document.querySelector(".tagsCon");
         let sidebar = document.querySelector(".sideBar");
         let project = document.querySelector(".project")
         btn.onclick = function () {
             sidebar.classList.toggle("active");
             project.classList.toggle("active");
+            tagsCon.classList.toggle("active");
 
         }
     </script></body>

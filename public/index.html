@@ -70,50 +70,80 @@
 
         </nav>
     <div class="project">
-      <div class="grid"><a href="/videos/2021-06-29-cv-website/">
-             <article class="video">
+      <div class="tagsCon">
 
-                    <div class="imgCon">
-                        <img src="/image/img4.jpg" alt="Thumbnail slide">
-                        <img src="/image/img3.jpg" alt="Thumbnail slide" class="thumbnail tn2">
-                        <img src="/image/img2.jpg" alt="Thumbnail slide" class="thumbnail tn3">
-                        <img src="/image/img1.jpg" alt="Thumbnail slide" class="thumbnail tn4">
+    <button class="tagsBtn active" >All</button>
+    <button class="tagsBtn" >JavaScript</button>
+    <button class="tagsBtn" >CSS</button>
+    <button class="tagsBtn" >HTML</button>
+
+</div>
+    <script>
+        let list = document.querySelectorAll('.tagsBtn');
+        for (let i=0; i<list.length; i++){
+            list[i].onclick = function(){
+            let j = 0;
+            while(j < list.length){
+                list[j++].className = 'tagsBtn';
+            }
+            list[i].className = 'tagsBtn active';
+            }
+        }
+    </script>
+<div class="grid"><a href="/videos/2021-06-29-cv-website/">
+            <article class="video">
+
+                <div class="imgCon">
+                    <img src="/image/img4.jpg" alt="Thumbnail slide">
+                    <img src="/image/img3.jpg" alt="Thumbnail slide" class="thumbnail tn2">
+                    <img src="/image/img2.jpg" alt="Thumbnail slide" class="thumbnail tn3">
+                    <img src="/image/img1.jpg" alt="Thumbnail slide" class="thumbnail tn4">
+                </div>
+                <section class="description">
+                    <div class="avatar">
+                        <img src="image/cvImage.jpg" alt="Thumbnail slide" class="avatarImg"></div>
+
+                    <div class="titlecon">
+                        <p class="title" id="dupa">
+                            Cv Website</p>
+                        <p class="titleU">Mikołaj
+                            <i class='bx bxs-check-circle'></i>
+                            
+                        </p>
+
                     </div>
-                    <section class="description">
-                        <div class="avatar"> <img src="image/cvImage.jpg" alt="Thumbnail slide" class="avatarImg"></div>
 
-                        <div class="titlecon">
-                            <p class="title"> Cv Website</p>
-                            <p class="titleU">Mikołaj <i class='bx bxs-check-circle'></i>  
-                            </p>
- 
-                        </div>
+                </section>
 
-                    </section>
+            </article>
+        </a><a href="/videos/2021-06-30-dogs-app/">
+            <article class="video">
 
-                </article></a><a href="/videos/2021-06-30-dogs-app/">
-             <article class="video">
+                <div class="imgCon">
+                    <img src="/image/imgdog4.jpg" alt="thumbnail">
+                    <img src="/image/imgdog3.jpg" alt="thumbnail" class="thumbnail tn2">
+                    <img src="/image/imgdog2.jpg" alt="thumbnail" class="thumbnail tn3">
+                    <img src="/image/imgdog1.jpg" alt="thumbnail" class="thumbnail tn4">
+                </div>
+                <section class="description">
+                    <div class="avatar">
+                        <img src="image/cvImage.jpg" alt="thumbnail" class="avatarImg"></div>
 
-                    <div class="imgCon">
-                        <img src="/image/imgdog4.jpg" alt="thumbnail">
-                        <img src="/image/imgdog3.jpg" alt="thumbnail" class="thumbnail tn2">
-                        <img src="/image/imgdog2.jpg" alt="thumbnail" class="thumbnail tn3">
-                        <img src="/image/imgdog1.jpg" alt="thumbnail" class="thumbnail tn4">
+                    <div class="titlecon">
+                        <p class="title" id="dupa">
+                            Dogs App</p>
+                        <p class="titleU">Mikołaj
+                            <i class='bx bxs-check-circle'></i>
+                            
+                        </p>
+
                     </div>
-                    <section class="description">
-                        <div class="avatar"> <img src="image/cvImage.jpg" alt="thumbnail" class="avatarImg"></div>
 
-                        <div class="titlecon">
-                            <p class="title"> Dogs App</p>
-                            <p class="titleU">Mikołaj <i class='bx bxs-check-circle'></i>  
-                            </p>
- 
-                        </div>
+                </section>
 
-                    </section>
-
-                </article></a>}
-        
+            </article>
+        </a>}
+     
 </div>
    
 
@@ -159,11 +189,13 @@
   </script>
     <script>
         let btn = document.querySelector("#button");
+        let tagsCon = document.querySelector(".tagsCon");
         let sidebar = document.querySelector(".sideBar");
         let project = document.querySelector(".project")
         btn.onclick = function () {
             sidebar.classList.toggle("active");
             project.classList.toggle("active");
+            tagsCon.classList.toggle("active");
 
         }
     </script></body>
