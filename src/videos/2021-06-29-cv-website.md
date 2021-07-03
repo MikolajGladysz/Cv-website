@@ -1,5 +1,6 @@
 ---
 title: Cv Website
+views: 2,4M
 description_short: My own CV website, stylised as YouTube!
 author: Mikołaj
 date: 2021-06-29T18:51:42.141Z
