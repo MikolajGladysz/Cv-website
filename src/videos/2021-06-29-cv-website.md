@@ -13,7 +13,7 @@ tags:
   - post
   - HTML
   - CSS
-  - JAVASCRIPT
+  - JS
   - CMS
 p1t: Why YouTube?
 p1c: I came up with this idea when I saw a similar site, but in the style of
