@@ -393,6 +393,7 @@ border-radius: 10px;
     }
     .footerSection{
         flex-grow: 1;
+        width: 20vw;
         display: flex;
         align-items: center;
         justify-content: center;
