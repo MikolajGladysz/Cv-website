@@ -324,6 +324,7 @@ border-radius: 10px;
     height: 100%;
     top: 101px;
     padding: 10px;
+    padding-bottom: 300px;
     overflow: auto;
     position: fixed;
     width: calc(100% - 240px);
