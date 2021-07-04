@@ -340,7 +340,7 @@ border-radius: 10px;
         display: none;
     }
     .project{
-    top: 7vmax;
+    top: 14vmax;
     width:100% !important;
     left: 0px !important;
    
@@ -363,7 +363,7 @@ border-radius: 10px;
     }
     .con3 a{
         text-align: end;
-        padding: 20px;
+       
     }
     .con3 i {
         font-size: 3.5vmax;
