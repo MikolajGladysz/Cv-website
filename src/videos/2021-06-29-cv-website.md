@@ -18,7 +18,8 @@ tags:
 p1t: Why YouTube?
 p1c: >-
   I
-  came up with this idea when I saw a similar site, but in the style of spotify. Itimmediately caught my attention and I thought it was a great idea to stand out.  Then I thought making it like youtube would be an even better idea, it would allow me to showcase my projects in a
+  came up with this idea when I saw a similar site, but in the style of spotify. It
+  immediately caught my attention and I thought it was a great idea to stand out.  Then I thought making it like youtube would be an even bttter idea, it would allow me to showcase my projects in a
   interesting way.
 
   To best reflect the original layout, I used a couple of elements that I want to talk about
