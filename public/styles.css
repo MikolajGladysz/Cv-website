@@ -45,6 +45,7 @@ border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
+    font-size: 15px;
     display: flex;
     height: 40px;
     align-items: center;
@@ -63,10 +64,11 @@ border-radius: 10px;
 
 
 .sideBar ul {
+    font-weight: 800;
     list-style: none;
 }
 
-.sideBar i {
+.sideBar  span {
     margin-right: 20px;
     margin-left: 20px;
     font-size: 20px;
@@ -195,7 +197,7 @@ border-radius: 10px;
 
 }
 
-.con2 i {
+.con2 span {
     font-size: 15px;
     color: #6f6f6f;
 }
@@ -240,7 +242,7 @@ border-radius: 10px;
 .con3 a{
     width: 100%;
 }
-.con3 i {
+.con3 span {
     font-size: 20px;
     margin-left: 5px;
     margin-right: 5px;
@@ -263,13 +265,13 @@ border-radius: 10px;
     transform: translateX(-40px);
 }
 
-.con3 i:hover .tooltip {
+.con3 span:hover .tooltip {
     transition: all 0.5s ease;
     opacity: 0.8;
 
 }
 
-.con3 i:hover {
+.con3 span:hover {
     cursor: pointer;
 }
 
@@ -365,7 +367,7 @@ border-radius: 10px;
         text-align: end;
        
     }
-    .con3 i {
+    .con3 span {
         font-size: 3.5vmax;
     }
     .con4 {
