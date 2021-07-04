@@ -13,15 +13,16 @@ tags:
   - post
   - HTML
   - CSS
-  - JS
+  - JAVASCRIPT
   - CMS
 p1t: Why YouTube?
-p1c: 
+p1c: >-
+  Icame up with this idea when I saw a similar site, but in the style of spotify. It immediately caught my attention and I thought it was a great idea to stand out.  Then I thought making it like youtube would be an even better idea, it would allow me to showcase my projects in an interesting way.
 
-I saddacame up with this idea when I saw a similar site but in the style of spotify.It immediately caught my attention and I thought it was a great idea to stand out.Then I thought making it like youtube would be an even better idea, it would allow me to showcase my projects in an interesting way.
-To best reflect the original layout, I used a couple of elements that I want to talk about
+
+  To best reflect the original layout, I used a couple of elements that I want to talk about
 p2t: Top bar and side bar
-p2c: 
+p2c: >-
   They are navs with fixed position, that I included in all layouts by using CMS
   templates, so I avoid repetitions. 
 
