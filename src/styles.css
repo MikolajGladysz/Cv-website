@@ -101,7 +101,7 @@ border-radius: 10px;
     cursor: pointer;
 }
 
-.header .menu i {
+.header .menu span {
     color: whitesmoke;
     font-size: 20px;
 }
