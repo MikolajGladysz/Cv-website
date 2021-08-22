@@ -648,4 +648,6 @@ padding:20px;
 .textCenter{
     text-align: center;
 }
-
+.project .page-con > *{
+    margin-right: 20px;
+}
