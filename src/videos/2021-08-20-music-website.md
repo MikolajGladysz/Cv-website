@@ -31,5 +31,5 @@ c1cr: In order to achieve almost perfect score in the lighthouse tool ( 100
   (unnoticeable to the user), and besides I stuck to the DRY rule (do not repeat
   yourself), which limited unnecessary code
 gitlink: https://github.com/MikolajGladysz/Strona-muzyczna
-websiteLink: "../websites/Muzyczna/index.html"
+websiteLink: "/websites/Muzyczna/index.html"
 ---
