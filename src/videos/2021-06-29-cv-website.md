@@ -42,5 +42,6 @@ c1tr: Thumbnail animation
 c1cr: Thumbnails are four same-sized images with the same position. When user
   hovers over the video, each image is changing its display to none with
   different time delays. The result is animation of a slide show.
-gitlink: "#"
+gitlink: "https://github.com/MikolajGladysz/adminPanel"
+websiteLink: "#"
 ---

@@ -1,0 +1,425 @@
+:root{
+	--textgray:#8a8a8a;
+	--textgraylight:#959595;
+	--textgraydark:#2f2e2e;
+	--red:#ce0627;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+	
+	overflow-x:hidden;
+}
+
+*{
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	font-family: 'Myriad Pro Regular', sans-serif;
+	box-sizing:border-box;
+	list-style-type:none;
+	transition: all .2s;
+}
+.center{
+	margin: 0 auto;
+	max-width:1200px;
+	padding: 0 20px;
+}
+.flexBlock{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+
+header {
+	border-bottom:solid 1px #d7d7d7;
+	padding-bottom:14px !important;
+}
+header > a img{
+	width:138px;
+}
+header nav ul a{
+	font-size:20px;
+	color:var(--textgray);
+	padding:0 35px;
+}
+header nav ul a:hover{
+	opacity:.75;
+}
+header nav {
+	flex:auto;
+}
+header nav ul{
+	margin-right:45px;
+	justify-content:flex-end !important;
+
+}
+header .social img{
+	padding:0 10px;
+}
+header .social img:hover{
+	cursor:pointer;
+	opacity:.45;
+}
+/*=====================Section 1=================*/
+.section1 {
+	background:url("images/angryguy.png") right bottom no-repeat;
+
+	border-bottom:solid 3px var(--red);
+	padding-top:165px;
+}
+
+.section1 h1{
+	font-size:78px;
+	font-weight:400;
+	color:var(--textgraydark);
+	
+}
+.section1 h2{
+	margin-top:-20px !important;
+	font-weight:400;
+	margin-top:10px;
+	font-size:36px;
+	color:var(--textgray);
+}
+.section1 p{
+	line-height:27px;
+	max-width:594px;
+	margin-top:80px;
+	font-size:18px;
+	color:var(--textgraylight);
+}
+.section1 button{
+	padding:0 20px 0 28px;
+	position:relative;
+	width:200px;
+	height:60px;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	border-radius:18px;
+	background-color:var(--red);
+	color:white;
+	font-size:18px;
+	border:solid 2px var(--red);
+	margin: 60px 0 40px 0;
+}
+.section1 button:hover{
+	cursor:pointer;
+	background:white;
+	color:#2f2e2e;
+}
+.section1 button+button:hover{
+	cursor:pointer;
+	background:var(--red);
+	color:white;
+}
+.section1 button+button{
+	background:white;
+	color:#2f2e2e;
+	
+}
+.section1 .buttons{
+	max-width: 460px;
+	align-items:center;
+	justify-content:space-between;
+}
+.section1 .title{
+	padding-left:20px;
+	border-left:4px solid var(--red);
+}
+/*=====================Section 2=================*/
+.section2{
+	background:#131313;
+	margin-top:120px;
+	padding-bottom:40px;
+}
+.section2::before {
+    content: "";
+    width: 100%;
+    background: white;
+    height: 162px;
+    position: absolute;
+    z-index: 1;
+}
+.section2 img{
+	width:420px;
+	z-index:2;
+	max-width: 80vw;
+}
+.section2 > div {
+	flex-wrap:wrap;
+	align-items:flex-end;
+	justify-content:center;
+}
+.section2 > div div{
+	display:flex;
+	flex-direction:column;
+	padding:25px;
+	align-items:center;
+}
+.section2 > div div p {
+    font-size: 90px;
+    color: white;
+    padding: 0 0 0 10px;
+    line-height: 50px;
+    border-left: solid 5px var(--red);
+}
+.section2 > div div p+p{
+	font-size:18px;
+	color:#606060;
+	border:none;
+	margin-top:36px;
+	text-transform:uppercase;
+}
+/*=====================Section 3=================*/
+.section3{
+	margin-top:100px;
+	margin-bottom:52px;
+}
+.topdiv span{
+	font-size:36px;
+	color:#131313;
+	text-transform:uppercase;
+	padding:0 30px;
+}
+.topdiv span+span{
+	font-size:36px;
+	color:#b2b2b2;
+	border-left: solid 1px var(--red);
+}
+.topdiv div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topdiv p{
+    text-align:center;
+	color:#5d5d5d;
+	font-size:18px;
+}
+.section3 .angryimg{
+	width:500px;
+	max-width:80vw;
+}
+.section3 .bottomdiv h3 {
+    margin-top: 31px;
+    text-align: right;
+    color: #131313;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-right: solid 5px var(--red);
+    padding: 0 6px;
+    margin-bottom: 24px;
+}
+.section3 .bottomdiv p{
+	color:#959595;
+	font-size:16px;
+}
+.section3 .bottomdiv .rightdiv h3{
+	text-align:left;
+	border-right:none;
+	border-left:solid 5px var(--red);
+}
+/*=====================Section 4=================*/
+.section4{
+	background:url("images/boom.jpg") no-repeat center /cover;
+	position:relative;
+	margin-bottom:170px;
+	z-index:1;
+}
+.section4 > div{
+	z-index:3;	
+}
+.section4::after{
+	position:absolute;
+	background:var(--textgraydark);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:.9;
+	content:"";
+	z-index:-1;
+}
+.section4 .topdiv{
+	padding-top: 65px;
+	margin-bottom:100px;
+}
+
+.section4 .topdiv span,h2 {
+	color:white ;
+	font-size:36px;
+	text-transform:uppercase;
+	padding: 0 30px;
+}
+.section4 .topdiv span{
+	border-left:solid 1px var(--red);
+}
+.section4 .topdiv p{
+	color:#5d5d5d;
+
+}
+.section4 .item{
+	margin:0 30px;
+	color:#b1b1b1;
+	font-size:18px;
+	width:310px;
+	padding-bottom:16px;
+	margin-bottom:80px;
+	border-bottom:solid 1px #1e1e1e;
+}
+.section4 .item img{
+	
+}
+.section4 .bottomdiv .item span::before{
+	content: "";
+	background:url("images/okejka.png");
+	margin-right:28px;
+	margin-left:17px;
+	width:15px;
+	height:12px;
+	display:inline-block;
+}
+.section4 .bottomdiv{
+	justify-content:center;
+	flex-wrap:wrap;
+}
+/*=====================Section 5=================*/
+.section5{
+		display:flex;
+	align-items:center;
+	flex-direction:column;
+}
+.section5 .karuzela{
+	margin-bottom:122px;
+	width:80vw;
+}
+.section5 .karuzela img{
+	max-width:80vw;
+}
+.section5 .topdiv{
+	margin-bottom:100px;
+}
+/*=====================Section 6=================*/
+.section6{
+	justify-content:center;
+	padding-bottom:200px;
+}
+.section6 > div {
+	margin-left:60px;
+}
+
+.section6 > img{
+		max-width:62vw;
+}
+.section6 div img {
+	margin-right:30px;
+	
+}
+.section6 div div {
+	margin-bottom:37px;
+}
+.section6 div div+div {
+	border-bottom:solid 1px #dbdbdb;
+	padding-bottom:40px;
+}
+/*FOOTER*/
+footer{
+	background:#131313;
+	height:60px;
+	display:flex;
+	align-items:center;
+	font-size:14px;
+	color:#868686;
+}
+footer div{
+	width:100%;
+}
+footer span+span{
+	text-align:right;
+}
+/*RWD*/
+@media only screen and (max-width: 1000px) {
+	.section1 h1{
+		width: min-content;
+	}
+
+}
+@media only screen and (max-width: 930px) {
+	.section1 p{
+		width:35%;
+	}
+
+}
+@media only screen and (max-width: 840px) {
+	.section3 .bottomdiv{
+		flex-direction:column;
+	}
+	.section3 .bottomdiv h3{
+		text-align:center !important;
+	}
+	.section6{
+		flex-direction:column;
+	}
+	.section6 > img{
+		max-width:90vw;
+		margin-bottom:20px;
+	}
+
+}
+@media only screen and (max-width: 740px) {
+	header nav ul a{	
+	padding:0 20px;
+	}
+
+}
+@media only screen and (max-width: 650px) {
+	header .social img{
+	display:none;
+	}
+	header nav ul a{	
+	padding:0 15px;
+	}
+	.section6 > div {
+    margin-left: 0px;
+}
+}
+@media only screen and (max-width: 500px) {
+	header > a img{
+	transform:scale(0);
+}
+	header nav ul a{	
+	flex:auto;
+		
+	}
+	
+	header nav ul{margin-top:20px;
+		justify-content:space-around !important;
+	}
+	.section1 p{
+		margin-bottom:333px;
+		width:100%;
+	}
+	.topdiv div{
+		flex-direction:column;
+	}
+	.section1{
+		background:url("images/angryguy.png") center bottom no-repeat;
+	}
+}
+	@media only screen and (max-width: 480px) {
+	header > a img{
+	display:none;
+	}
+	.section1 .title h1{
+		font-size:50px;
+		margin-bottom:10px;
+	}
+	.section1 .title h2{
+		font-size:30px;
+	}
+}			
+
