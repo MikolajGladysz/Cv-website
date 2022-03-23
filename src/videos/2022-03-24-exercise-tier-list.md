@@ -1,35 +1,28 @@
 ---
-title: Music websiteXDDDDDDDD
+title: Exercise Tier List
 views: "100"
-description_short: On-page website about music
+description_short: Life`s too short for bad exercises
 author: Mikołaj Gładysz
-date: 2021-08-20T14:56:41.797Z
-imageAlt: Music website
-image1: /image/ms1.jpg
-image2: /image/ms2.jpg
-image3: /image/ms3.jpg
-image4: /image/ms3.jpg
+date: 2022-03-24T14:56:41.797Z
+imageAlt: Exercise website
+image1: /image/exeimg1.jpg
+image2: /image/exeimg2.jpg
+image3: /image/exeimg3.jpg
+image4: /image/exeimg4.jpg
 tags:
   - post
   - HTML
   - CSS
   - JS
-p1t: "Website purpose "
-p1c: This website is a showcase of striming service, it has a tab with blog
-  entries, a music player and a store with tutorials.
-p2t: Modular design
-p2c: the whole layout is divided into independent sections, which can be broken
-  down into components, making it easier to implement frameworks such as vue.js
-c1tl: Animations
-c1cl: For the most noticeable component loading animations, I used the Aos
-  library. Other animations you can find on the page are menu animation (mobile
-  version) and object resizing animation (RWD) made in pure css
-c1tr: Lighthouse
-c1cr: In order to achieve almost perfect score in the lighthouse tool ( 100
-  performance on desktop, 93 on mobile) I used only svg icons loaded directly in
-  the code of the page, any graphics that have an overlay have lower quality
-  (unnoticeable to the user), and besides I stuck to the DRY rule (do not repeat
-  yourself), which limited unnecessary code
-gitlink: https://github.com/MikolajGladysz/Strona-muzyczna
-websiteLink: "/websites/Muzyczna/index.html"
+p1t: "Life`s too short for bad exercises"
+p1c: This sentence was origin of this website idea. Its purpouse is to help save time and avoid not efficient exercises, by representing it in a form of tierlist, form best to worst.
+p2t: Website architecture
+p2c: Main components of the website are controller, model and views. To provide communication between js files I used modules, and exporting classes.
+c2tl: Controller
+c2cl: Most important module, coordinates all other components. It react on hash change and render content accordingly, calling other modules.
+c2tm: Model
+c2cm:Model is all about getting and setting the data. After getting called with id, it uses methods from helper.js file to get right json file and create object out of it. All logic is prepared to get data from api, but I dont know how to make those yet, so I use JSON files.
+c2tl: Views
+c2cl:
+gitlink: https://github.com/MikolajGladysz/exercise-tier-list
 ---
