@@ -1,5 +1,5 @@
 ---
-title: Recipes Website
+title: Recipes Website xd
 views: "23"
 description_short: Small app with a lot of recipes from database
 author: Mikołaj
